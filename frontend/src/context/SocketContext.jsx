@@ -17,7 +17,7 @@ export const SocketContextProvider = ({ children }) => {
     if (authUser) {
 
     // send userId to backend to verify online status
-      const socket = io("http://localhost:3000", {
+      const socket = io("https://vibewave-chatapp.onrender.com/", {
       	query: {
       		userId: authUser._id,
       	},
